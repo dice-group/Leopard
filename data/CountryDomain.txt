@@ -1,0 +1,251 @@
+Argentina	AR	ARG	.ar
+Bolivia	BO	BOL	.bo
+Brazil	BR	BRA	.br
+Chile	CL	CHL	.cl
+Colombia	CO	COL	.co
+Ecuador	EC	ECU	.ec
+Falkland Islands	FK	FLK	.fk
+French Guiana	GF	GUF	.gf
+Guiana	GY	GUF	.gf
+Guyana	GY	GUY	.gy
+Paraguay	PY	PRY	.py
+Peru	PE	PER	.pe
+Suriname	SR	SUR	.sr
+Uruguay	UY	URY	.uy
+Venezuela	VE	VEN	.ve
+Anguilla	AI	AIA	.ai
+Antigua and Barbuda	AG	ATG	.ag
+Aruba	AW	ABW	.aw
+Bahamas	BS	BHS	.bs
+Barbados	BB	BRB	.bb
+Belize	BZ	BLZ	.bz
+Bermuda	BM	BMU	.bm
+Bonaire	BQ	BES	.an
+British Virgin Islands	VG	VGB	.vg
+Canada	CA	CAN	.ca
+Cayman Islands	KY	CYM	.ky
+Costa Rica	CR	CRI	.cr
+Cuba	CU	CUB	.cu
+Curacao	CW	CUW	.cw
+Dominica	DM	DMA	.dm
+Dominican Republic	DO	DOM	.do
+El Salvador	SV	SLV	.sv
+Greenland	GL	GRL	.gl
+Grenada and Carriacuou	GD	GRD	.gd
+Guadeloupe	GP	GLP	.gp
+Guatemala	GT	GTM	.gt
+Haiti	HT	HTI	.ht
+Honduras	HN	HND	.hn
+Jamaica	JM	JAM	.jm
+Martinique	MQ	MTQ	.mq
+Mexico	MX	MEX	.mx
+Miquelon	PM	SPM	.pm
+Montserrat	MS	MSR	.ms
+Netherlands Antilles	CW	ANT	.an
+Nevis	KN	KNA	.kn
+Nicaragua	NI	NIC	.ni
+Panama	PA	PAN	.pa
+Puerto Rico	PR	PRI	.pr
+Saba	BQ	BES	.an
+Sint Eustatius	BQ	BES	.an
+Sint Maarten	SX	SXM	.sx
+St. Kitts	KN	KNA	.kn
+St. Lucia	LC	LCA	.lc
+St. Pierre and Miquelon	PM	SPM	.pm
+St. Vincent	VC	VCT	.vc
+Trinidad and Tobago	TT	TTO	.tt
+Turks and Caicos Islands	TC	TCA	.tc
+United States	US	USA	.us
+US Virgin Islands	VI	VIR	.vi
+Albania	AL	ALB	.al
+Andorra	AD	AND	.ad
+Austria	AT	AUT	.at
+Belarus	BY	BLR	.by
+Belgium	BE	BEL	.be
+Bosnia and Herzegovina	BA	BIH	.ba
+Bulgaria	BG	BGR	.bg
+Croatia	HR	HRV	.hr
+Cyprus	CY	CYP	.cy
+Czech Republic	CZ	CZE	.cz
+Denmark	DK	DNK	.dk
+Estonia	EE	EST	.ee
+Faroe Islands	FO	FRO	.fo
+Finland	FI	FIN	.fi
+France	FR	FRA	.fr
+Germany	DE	DEU	.de
+Gibraltar	GI	GIB	.gi
+Greece	GR	GRC	.gr
+Hungary	HU	HUN	.hu
+Iceland	IS	ISL	.is
+Ireland	IE	IRL	.ie
+Isle of Man	IM	IMN	.im
+Italy	IT	ITA	.it
+Latvia	LV	LVA	.lv
+Liechtenstein	LI	LIE	.li
+Lithuania	LT	LTU	.lt
+Luxembourg	LU	LUX	.lu
+Macedonia	MK	MKD	.mk
+Malta	MT	MLT	.mt
+Moldova	MD	MDA	.md
+Monaco	MC	MCO	.mc
+Montenegro	ME	MNE	.me
+Netherlands	NL	NLD	.nl
+Norway	NO	NOR	.no
+Poland	PL	POL	.pl
+Portugal	PT	PRT	.pt
+Romania	RO	ROU	.ro
+Russia	RU	RUS	.ru
+San Marino	SM	SMR	.sm
+Serbia	RS	SRB	.rs
+Slovakia	SK	SVK	.sk
+Slovenia	SI	SVN	.si
+Spain	ES	ESP	.es
+Sweden	SE	SWE	.se
+Switzerland	CH	CHE	.ch
+Ukraine	UA	UKR	.ua
+United Kingdom	GB	GBR	.uk
+Vatican city	VA	VAT	.va
+Yugoslavia	RS	RSB	.rs
+American Samoa	AS	ASM	.as
+Australia	AU	AUS	.au
+Chatham Island, NZ	NZ	NZL	.nz
+Cook Islands	CK	COK	.ck
+East Timor	TL	TLS	.tl
+Federated States of Micronesia	FM	FSM	.fm
+Fiji Islands	FJ	FJI	.fj
+French Polynesia	PF	PYF	.pf
+Guam	GU	GUM	.gu
+Kiribati	KI	KIR	.ki
+Mariana Islands	MP	MNP	.mp
+Marshall Islands	MH	MHL	.mh
+Midway Islands	UM	UMI	.um
+Nauru	NR	NRU	.nr
+New Caledonia	NC	NCL	.nc
+New Zealand	NZ	NZL	.nz
+Niue	NU	NIU	.nu
+Norfolk Island	NF	NFK	.nf
+Palau	PW	PLW	.pw
+Papua New Guinea	PG	PNG	.pg
+Saipan	MP	MNP	.mp
+Samoa	WS	WSM	.ws
+Solomon Islands	SB	SLB	.sb
+Tokelau	TK	TKL	.tk
+Tonga	TO	TON	.to
+Tuvalu	TV	TUV	.tv
+Vanuatu	VU	VUT	.vu
+Wake Island	UM	UMI	.um
+Wallis and Futuna Islands	WF	WLF	.wf
+Afghanistan	AF	AFG	.af
+Armenia	AM	ARM	.am
+Azerbaijan	AZ	AZE	.az
+Bahrain	BH	BHR	.bh
+Bangladesh	BD	BGD	.bd
+Bhutan	BT	BTN	.bt
+Brunei	BN	BRN	.bn
+Cambodia	KH	KHM	.kh
+China	CN	CHN	.cn
+Christmas Island	CX	CXR	.cx
+Cocos Islands	CC	CCK	.cc
+Diego Garcia	IO	IOT	.io
+Georgia	GE	GEO	.ge
+Hong Kong	HK	HKG	.hk
+India	IN	IND	.in
+Indonesia	ID	IDN	.id
+Iran	IR	IRN	.ir
+Iraq	IQ	IRQ	.iq
+Israel	IL	ISR	.il
+Japan	JP	JPN	.jp
+Jordan	JO	JOR	.jo
+Kazakhstan	KZ	KAZ	.kz
+Kuwait	KW	KWT	.kw
+Kyrgyzstan	KG	KGZ	.kg
+Laos	LA	LAO	.la
+Lebanon	LB	LBN	.lb
+Macau	MO	MAC	.mo
+Malaysia	MY	MYS	.my
+Maldives	MV	MDV	.mv
+Mongolia	MN	MNG	.mn
+Myanmar	MM	MMR	.mm
+Nepal	NP	NPL	.np
+North Korea	KP	PRK	.kp
+Oman	OM	OMN	.om
+Pakistan	PK	PAK	.pk
+Palestine	PS	PSE	.ps
+Philippines	PH	PHL	.ph
+Qatar	QA	QAT	.qa
+Saudi Arabia	SA	SAU	.sa
+Singapore	SG	SGP	.sg
+South Korea	KR	KOR	.kr
+Sri Lanka	LK	LKA	.lk
+Syria	SY	SYR	.sy
+Taiwan	TW	TWN	.tw
+Tajikistan	TJ	TJK	.tj
+Thailand	TH	THA	.th
+Turkey	TR	TUR	.tr
+Turkmenistan	TM	TKM	.tm
+United Arab Emirates	AE	ARE	.ae
+Uzbekistan	UZ	UZB	.uz
+Vietnam	VN	VNM	.vn
+Yemen	YE	YEM	.ye
+Antarctica	AQ	ATA	.aq
+Algeria	DZ	DZA	.dz
+Angola	AO	AGO	.ao
+Ascension	SH	SHN	.sh
+Benin	BJ	BEN	.bj
+Botswana	BW	BWA	.bw
+Burkina Faso	BF	BFA	.bf
+Burundi	BI	BDI	.bi
+Cameroon	CM	CMR	.cm
+Cape Verde Islands	CV	CPV	.cv
+Central African Republic	CF	CAF	.cf
+Chad Republic	TD	TCD	.td
+Comoros	KM	COM	.km
+Congo	CG	COG	.cg
+Dem. Republic of the Congo	CD	COD	.cd
+Djibouti	DJ	DJI	.dj
+Egypt	EG	EGY	.eg
+Equatorial Guinea	GQ	GNQ	.gq
+Eritrea	ER	ERI	.er
+Ethiopia	ET	ETH	.et
+Gabon Republic	GA	GAB	.ga
+Gambia	GM	GMB	.gm
+Ghana	GH	GHA	.gh
+Guinea	GN	GIN	.gn
+Guinea-Bissau	GW	GNB	.gw
+Ivory Coast	CI	CIV	.ci
+Kenya	KE	KEN	.ke
+Lesotho	LS	LSO	.ls
+Liberia	LR	LBR	.lr
+Libya	LY	LBY	.ly
+Madagascar	MG	MDG	.mg
+Malawi	MW	MWI	.mw
+Mali Republic	ML	MLI	.ml
+Mauritania	MR	MRT	.mr
+Mauritius	MU	MUS	.mu
+Mayotte Island	YT	MYT	.yt
+Morocco	MA	MAR	.ma
+Mozambique	MZ	MOZ	.mz
+Namibia	NA	NAM	.na
+Niger Republic	NE	NER	.ne
+Nigeria	NG	NGA	.ng
+Principe	ST	STP	.st
+Reunion Island	RE	REU	.re
+Rwanda	RW	RWA	.rw
+Sao Tome	ST	STP	.st
+Senegal Republic	SN	SEN	.sn
+Seychelles	SC	SYC	.sc
+Sierra Leone	SL	SLE	.sl
+Somalia Republic	SO	SOM	.so
+South Africa	ZA	ZAF	.za
+South Sudan	SS	SSD	.ss
+St. Helena	SH	SHN	.sh
+Sudan	SD	SDN	.sd
+Swaziland	SZ	SWZ	.sz
+Tanzania	TZ	TZA	.tz
+Togo	TG	TGO	.tg
+Tunisia	TN	TUN	.tn
+Uganda	UG	UGA	.ug
+Zaire	CD	COD	.cd
+Zambia	ZM	ZMB	.zm
+Zanzibar	TZ	TZA	.tz
+Zimbabwe	ZW	ZWE	.zw
