@@ -1,9 +1,0 @@
-<http://permid.org/1-5045055688> <http://ont.thomsonreuters.com/mdaas/isDomiciledIn> "United States"@en .
-<http://permid.org/1-5045055688> <http://permid.org/ontology/organization/hasHeadquartersPhoneNumber> "00019015973000" .
-<http://permid.org/1-5045055688> <http://permid.org/ontology/organization/hasLatestOrganizationFoundedDate> "1999" .
-<http://permid.org/1-5015203477> <http://ont.thomsonreuters.com/mdaas/isDomiciledIn> "United Kingdom"@en .
-<http://permid.org/1-5015203477> <http://permid.org/ontology/organization/hasHeadquartersPhoneNumber> "00442074391900" .
-<http://permid.org/1-5015203477> <http://permid.org/ontology/organization/hasLatestOrganizationFoundedDate> "1999" .
-<http://permid.org/1-5044873322> <http://ont.thomsonreuters.com/mdaas/isDomiciledIn> "United States"@en .
-<http://permid.org/1-5044873322> <http://permid.org/ontology/organization/hasHeadquartersPhoneNumber> "00018502772524" .
-<http://permid.org/1-5044873322> <http://permid.org/ontology/organization/hasLatestOrganizationFoundedDate> "1960" .	
