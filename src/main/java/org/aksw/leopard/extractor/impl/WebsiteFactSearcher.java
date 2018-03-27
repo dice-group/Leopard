@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -15,8 +14,6 @@ import org.aksw.leopard.io.taskreader.TaskOneReader;
 import org.aksw.leopard.util.DomainCountry;
 import org.aksw.leopard.util.Phone;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 import com.google.i18n.phonenumbers.Phonenumber.PhoneNumber;
 
@@ -50,11 +47,8 @@ public class WebsiteFactSearcher extends AFactSearcher {
   @Override
   public void execute(final String url, final String name) {
 
-    final Map<String, Document> docs = taskOneReader.getDocs(url, name);
-
     final Map<String, List<String>> phoneSet = new HashMap<>();
-
-    for (final Entry<String, Document> entry : docs.entrySet()) {
+    for (final Entry<String, Document> entry : taskOneReader.getDocs(url, name).entrySet()) {
       final String pageName = entry.getKey();
       final Document pageDoc = entry.getValue();
 
@@ -62,7 +56,6 @@ public class WebsiteFactSearcher extends AFactSearcher {
       if (!tmp.isEmpty()) {
         phoneSet.put(pageName, tmp);
       }
-      // LOG.info(tmp);
     }
     // all pages done
 
@@ -100,11 +93,9 @@ public class WebsiteFactSearcher extends AFactSearcher {
     // TODO:
     if (tld.isEmpty() || tld.equals(".com")) {
       tld = ".us";
-
     }
     final String code = DomainCountry.domainToISOCode.get(tld);
     return code;
-
   }
 
   // TODO: there are com websites in UK and DE!
@@ -120,30 +111,4 @@ public class WebsiteFactSearcher extends AFactSearcher {
     return v;
   }
 
-  protected List<String> _domiciledIn(final Document doc) {
-
-    // String prefix = "http://www.linkedin.com";
-    // final String s = "https://www.linkedin.com/company/metropool-inc-/";
-
-    final String content = doc.toString();
-
-    // "itemprop=\"addressCountry\"";
-    // doc.select("#mp-itn b a");
-    final String tag = "country-name";
-
-    final Elements elements = doc.select(tag);
-    final Iterator<Element> iter = elements.iterator();
-
-    while (iter.hasNext()) {
-      final Element e = iter.next();
-      LOG.debug(e.data());
-    }
-
-    final int index = content.indexOf(tag);
-    if (index > 0) {
-      LOG.info(content.substring(index,
-          (index + 50) > content.length() ? content.length() : index + 50));
-    }
-    return new ArrayList<>();
-  }
 }

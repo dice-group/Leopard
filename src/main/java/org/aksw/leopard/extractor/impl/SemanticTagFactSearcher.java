@@ -57,7 +57,7 @@ public class SemanticTagFactSearcher extends AFactSearcher {
 
     extractDate(url, name);
 
-    // extractPhone(url, name);
+    extractPhone(url, name);
   }
 
   /**
@@ -67,17 +67,18 @@ public class SemanticTagFactSearcher extends AFactSearcher {
    */
   protected void extractDate(final String url, final String name) {
     // get websites
-    final Map<String, Document> docs = taskOneReader.getDocs(url, name);
 
     // all websites for the given url
     final Set<Integer> years = new HashSet<>();
-    for (final Entry<String, Document> entry : docs.entrySet()) {
+
+    for (final Entry<String, Document> entry : taskOneReader.getDocs(url, name).entrySet()) {
       final Document pageDoc = entry.getValue();
       try {
         final String html = pageDoc.html();
         final String pattern = "founded";
         final int i = pageDoc.html().indexOf(pattern);
         if (i > -1) {
+
           final String sub = html.substring(i + pattern.length(), i + pattern.length() + 20);
           final int min = YearsParser.findYear(sub, 1300, 2018)//
               .stream().min(Integer::compare).get();
@@ -179,7 +180,7 @@ public class SemanticTagFactSearcher extends AFactSearcher {
      final Map<String, Document> docs = taskOneReader.getDocs(url, name);
      final List<String> phones = new ArrayList<>();
      for (final Entry<String, Document> entry : docs.entrySet()) {
-  
+
        // final String pageName = entry.getKey();
        final Document pageDoc = entry.getValue();
        if (foundedDate == null) {
@@ -190,12 +191,12 @@ public class SemanticTagFactSearcher extends AFactSearcher {
              final String year =
                  html.substring(i + "founded in".length(), i + "founded in".length() + 5);
              Integer.valueOf(year);
-  
+
              foundedDate = year;
              foundedDateScore = 1D;
            }
          } catch (final Exception e) {
-  
+
          }
        }
        // open graph
@@ -216,7 +217,7 @@ public class SemanticTagFactSearcher extends AFactSearcher {
            countries.add(n);
          }
        }
-  
+
        // schema.org
        phoneElement = pageDoc.getElementsByAttributeValueMatching("property", "telephone");
        if (!phoneElement.isEmpty()) {
@@ -225,7 +226,7 @@ public class SemanticTagFactSearcher extends AFactSearcher {
            phones.add(n);
          }
        }
-  
+
        countryElement = pageDoc.getElementsByAttributeValueMatching("property", "addressLocality");
        if (!countryElement.isEmpty()) {
          n = countryElement.attr("content").trim();
@@ -235,16 +236,16 @@ public class SemanticTagFactSearcher extends AFactSearcher {
        }
        // TODO:
        // <title>Moe's Bar & Grill | Pointe-Claire, QC | (514) 426-8247</title>
-  
+
      }
      if (!phones.isEmpty() || !countries.isEmpty()) {
        LOG.info("url: " + url + " -> " + phones + "/" + countries + " " + docs.keySet());
      }
-  
+
      final List<String> c = new ArrayList<>();
      final List<String> p = new ArrayList<>();
      for (final String phone : phones) {
-  
+
        PhoneNumberUtil.getInstance().getSupportedRegions().forEach(code -> {
          final List<PhoneNumber> list = phoneUtil.extractPhoneNumber(phone, code);
          if (!list.isEmpty()) {
@@ -253,18 +254,18 @@ public class SemanticTagFactSearcher extends AFactSearcher {
          }
        });
      }
-  
+
      if (!c.isEmpty()) {
        if (c.size() >= 1) {
          phone = p.get(0);
          phoneScore = 0.5D;
-  
+
          domiciledIn = c.get(0);
          domiciledInScore = 0.7D;
        } else {
        }
      }
-  
+
      for (final String country : countries) {
        if (rToL.values().contains(country.trim())) {
          // domiciledIn = country.trim();
@@ -272,7 +273,7 @@ public class SemanticTagFactSearcher extends AFactSearcher {
        }
      }
    }
-  
+
   </code>
    */
 

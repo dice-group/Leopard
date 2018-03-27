@@ -22,13 +22,11 @@ public class TaskOneStore {
   public Map<String, String> idToFoundedDate;
   public Map<String, String> idToDomiciledIn;
 
-  // public static void main(final String[] args) {
-  // final Store strore = new Store();
-  // LOG.info(strore.idToPhone.size());
-  // strore.idToPhone.put(String.valueOf(new Random().nextInt()), "");
-  // strore.store();
-  // }
-
+  /**
+   *
+   * Constructor.
+   *
+   */
   public TaskOneStore() {
 
     // read data if any

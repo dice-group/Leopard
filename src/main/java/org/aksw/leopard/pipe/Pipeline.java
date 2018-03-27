@@ -7,9 +7,10 @@ import java.util.Set;
 
 import org.aksw.leopard.extractor.Extractor;
 import org.aksw.leopard.extractor.IExtractor;
+import org.aksw.leopard.extractor.impl.DBpediaSearcher;
 import org.aksw.leopard.extractor.impl.DomainFactSearcher;
+import org.aksw.leopard.extractor.impl.FoxSearcher;
 import org.aksw.leopard.extractor.impl.SemanticTagFactSearcher;
-import org.aksw.leopard.extractor.impl.SemanticTagFactSearcherOld;
 import org.aksw.leopard.extractor.impl.WebsiteFactSearcher;
 import org.aksw.leopard.io.ExtractedData;
 import org.aksw.leopard.io.taskreader.TaskFile;
@@ -40,21 +41,25 @@ public class Pipeline {
   public Pipeline() {
 
     IExtractor ifs;
-    ifs = new SemanticTagFactSearcherOld(taskOneReader);
+    // ifs = new SemanticTagFactSearcherOld(taskOneReader);
     // list.add(ifs);
 
     ifs = new SemanticTagFactSearcher(taskOneReader);
     list.add(ifs);
+
     // ifs = new TaskTwo(taskOneReader, t2);
     // list.add(ifs);
 
     ifs = new DomainFactSearcher();
     list.add(ifs);
 
-    // ifs = new DBpediaSearcher(taskOneReader, t2);
+    ifs = new DBpediaSearcher(taskOneReader, t2);
     // list.add(ifs);
 
     ifs = new WebsiteFactSearcher(taskOneReader);
+    list.add(ifs);
+
+    ifs = new FoxSearcher();
     list.add(ifs);
   }
 
@@ -101,14 +106,11 @@ public class Pipeline {
   }
 
   public void setStoreWithBestScores(final String uri, final TaskOneStore store,
-      final Set<ExtractedData> factSearcherResults) {
+      final Set<ExtractedData> results) {
 
     final ExtractedData best = ExtractedData.get("best", "", "", "", 0D, 0D, 0D);
 
-    // LOG.info(factSearcherResults);
-    // for all approaches
-
-    for (final ExtractedData extractedData : factSearcherResults) {
+    for (final ExtractedData extractedData : results) {
 
       if ((extractedData.domiciledIn != null)
           && (extractedData.domiciledInScore > best.domiciledInScore)) {

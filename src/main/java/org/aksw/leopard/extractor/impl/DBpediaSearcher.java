@@ -15,7 +15,7 @@ public class DBpediaSearcher extends AFactSearcher {
   @SuppressWarnings("unchecked")
   public DBpediaSearcher(final TaskOneReader taskOneReader, final TaskTwoReader taskTwoReader) {
     this.taskOneReader = taskOneReader;
-    this.taskTwoReader = taskTwoReader;
+    // this.taskTwoReader = taskTwoReader;
 
     Serialization.setRootFolder("tmp_dbpedia");
     String file;
@@ -49,13 +49,13 @@ public class DBpediaSearcher extends AFactSearcher {
       final String loc = nameToLocation.get(name.trim());
       if (loc != null) {
         domiciledIn = loc;
-        domiciledInScore = 0.3D;
+        domiciledInScore = 0.8868;
       }
 
       final String year = nameToYear.get(name.trim());
       if (year != null) {
-        foundedDate = year;
-        foundedDateScore = 0.8868D;
+        // foundedDate = year;
+        // foundedDateScore = 0.1667;
       }
     }
   }
